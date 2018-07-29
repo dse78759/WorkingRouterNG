@@ -14,7 +14,11 @@ import { TicketComponent } from './ticket/ticket.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes:Routes = [ { component:BacklogComponent, path:'Backlog'}, 
-                 { component:SprintComponent, path:'Sprint'}];
+                 //{ component:SprintComponent, path:'Sprint'},
+                { component:SprintComponent, path:'Sprint/:id'},
+                { path:'', component:UsersComponent},
+                { path:'**', component:TicketComponent }
+                ];
 
 @NgModule({
   declarations: [

@@ -1,10 +1,12 @@
 
 log of progress:
 	- router, with components matching link names
+	- default route ( path : '' ) when app first starts
+	- wildcard route,  ( path : '**' ), when nothing else matches
+
 
 
 todo:	
-	- add component that doesn't match link name
 	- activated route, that receives param from path
 	- build list of routes dynamically from a list
 	- add a service that returns lists of tickets 

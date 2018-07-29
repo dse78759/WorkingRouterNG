@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app zz works!';
+  footerText = 'this is after the router tag';
 }
