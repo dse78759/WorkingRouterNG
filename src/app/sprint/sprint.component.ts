@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
  
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SprintComponent implements OnInit {
 
-  constructor() { }
+    aRoute:ActivatedRoute;
+
+  constructor( ar : ActivatedRoute ) {
+    this.aRoute=ar;
+   }
 
   ngOnInit() {
+    console.log (" test");
+    console.log("asdf", this.aRoute);
+
+    console.log("params" + this.aRoute.params);
+    console.log("query params" + this.aRoute.queryParams);
   }
 
 }
