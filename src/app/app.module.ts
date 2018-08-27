@@ -13,10 +13,11 @@ import { TicketComponent } from './ticket/ticket.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
-const routes:Routes = [ { component:BacklogComponent, path:'Backlog'}, 
-                 //{ component:SprintComponent, path:'Sprint'},
+const routes:Routes = [ { component:BacklogComponent, path:'Backlog/:id'}, 
                 { component:SprintComponent, path:'Sprint/:id'},
+                { component:ComponentComponent, path:'Component/:id'},
                 { path:'', component:UsersComponent},
+                { path:'User/:id', component:UsersComponent},
                 { path:'**', component:TicketComponent }
                 ];
 

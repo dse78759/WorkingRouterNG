@@ -10,6 +10,7 @@ export class BacklogComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("backlog");
   }
 
 }
